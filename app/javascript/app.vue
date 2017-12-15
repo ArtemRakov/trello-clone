@@ -48,7 +48,6 @@ export default {
       })
     },
     listMoved(event) {
-      console.log(event)
       var data = new FormData
       data.append('list[position]', event.newIndex + 1)
 

@@ -22,7 +22,6 @@ class ListsController < ApplicationController
   end
 
   def move
-    p @list
     @list.insert_at(list_params[:position].to_i)
     render action: :show
   end
